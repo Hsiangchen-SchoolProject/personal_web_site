@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>祥</title>
+</head>
+<script src="js/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+$(function() {
+    $("#gotop").click(function() {
+        jQuery("html,body").animate({
+            scrollTop: 0
+        }, 0);
+    });
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 300) {
+            $('#gotop').fadeIn("fast");
+        } else {
+            $('#gotop').stop().fadeOut("fast");
+        }
+    });
+});
+
+$(document).scroll(function() {
+    if ($(this).scrollTop() > 900) {
+        $(".small_block").slideDown(1200);
+        $(".small_block_m").slideDown(1200);
+        $(".big_block1").fadeIn(1200);
+        $(".big_block2").fadeIn(1200);
+        $(".big_block3").fadeIn(1200);
+    }
+});
+
+$(document).scroll(function() {
+    if ($(this).scrollTop() > 3000) {
+        $(".c_left").fadeIn(2000);
+        $(".c_middle").fadeIn(2000);
+        $(".c_right").fadeIn(2000);
+    }
+});
+</script>
+
+<body>
+    <!-- /header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light n-head">
+        <a class="navbar-brand name" href="#">Jason</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#club">Club</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#hobby">Hobbies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#expectation">Expectation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#life">Life</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact">Contact</a>
+                </li>
+            </ul>
+            <span class="navbar-text sp_name">
+                HSIANG-CHEN
+            </span>
+        </div>
+    </nav>
+    <!-- /header end -->
+    <!-- 輪播 -->
+    <div class="container-fluid">
+        <img id="h-img" src="img/123.jpg" alt="">
+    </div>
+    <!-- 輪播End -->
+    <div class="container-fluid">
+        <div class="row r-body">
+            <div class="col-4 c-left"></div>
+            <div class="col-4 c-middle"></div>
+            <div class="col-4 c-right"></div>
+        </div>
+    </div>
+    <a name="education"></a>
+    <div class="m-body">
+        <!-- Education -->
+        <div class="container-fluid b-edu">
+            <div class="row">
+                <div class="col self">
+                    <img class="self-img" src="img/self.jpg" alt="個人圖片">
+                </div>
+                <div class="col school">
+                    <div class="row">
+                        <div class="col">
+                            <div class="eb">
+                                <p class="period"><img class="hat" src="img/hat.png" alt=""> 2017 ~ present</p>
+                                <p class="d-school">Chung Yuan Christian University</p>
+                                <p class="d-school">Information Management</p>
+                            </div>
+                            <div class="eb">
+                                <p class="period"><img class="hat" src="img/hat.png" alt=""> 2014 ~ 2016</p>
+                                <p class="d-school">St. Peter High School</p>
+                                <p class="d-school">General Education</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div><img class="school-img1" src="img/CYCU.png" alt=""></div>
+                            <div><img class="school-img2" src="img/st.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Education end -->
+        <!-- 社團活動經驗  -->
+        <div class="container b-club">
+            <a name="club">
+                <p class="title">Club Experience</p>
+            </a>
+            <hr color="white">
+            <div class="row">
+                <div class="col cen">
+                    <div class="small_block">
+                        <img class="club_img" src="img/club2.jpg" alt="">
+                    </div>
+                    <div class="gid h_style1">
+                        <div class="big_block1">
+                            <figure>
+                                <p class="p_club">Leader of Singing Competition</p>
+                                <figcaption>
+                                    <ul class="ul_club">
+                                        <li>Event planner</li>
+                                        <li>Equipment Contacting</li>
+                                        <li>Personnel management</li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col cen">
+                    <div class="gid h_style2">
+                        <div class="big_block2">
+                            <figure>
+                                <p class="p_club">Dancer of Innovative Dancing Competition</p>
+                                <figcaption>
+                                    <ul class="ul_club">
+                                        <li>6th Prize</li>
+                                        <li>Team Work</li>
+                                        <li>Main Dancer</li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="small_block_m">
+                        <img class="club_img" src="img/club1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col cen">
+                    <div class="small_block">
+                        <img class="club_img" src="img/club3.jpg" alt="">
+                    </div>
+                    <div class="gid h_style3">
+                        <div class="big_block3">
+                            <figure>
+                                <p class="p_club">Emcee of Department Graduation</p>
+                                <figcaption>
+                                    <ul class="ul_club">
+                                        <li>Preside</li>
+                                        <li>Instant Reaction</li>
+                                        <li>Solemn Attitude</li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 社團活動經驗 End -->
+        <!-- 興趣目標 -->
+        <div class="container">
+            <a name="hobby">
+                <p class="title">Hobbies</p>
+            </a>
+            <hr color="white">
+            <div class="row">
+                <div class="col">
+                    <div class="hobby">
+                        <div><img class="hobby_img" src="img/habit1.png" alt=""></div>
+                        <div>
+                            <p class="p_hobby">Volleyball makes me feel the power of the team and I feel very happy when we play together.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="hobby">
+                        <div><img class="hobby_img" src="img/habit2.png" alt=""></div>
+                        <div>
+                            <p class="p_hobby">Sometimes it's quiet, sometimes it's passionate.It is everywhere in our life and brings us happiness.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="hobby">
+                        <div><img class="hobby_img" src="img/habit3.png" alt=""></div>
+                        <div>
+                            <p class="p_hobby">The cuisine is very diverse and I feel excited every time I finish a new cuisine.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="hobby">
+                        <div><img class="hobby_img" src="img/habit4.png" alt=""></div>
+                        <div>
+                            <p class="p_hobby">The world in the book is colorful.I think it is wonderful that the author to convey his feelings to the readers through words.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 興趣目標 End -->
+        <!-- 期許 -->
+        <div class="container-fluid">
+            <a name="expectation">
+                <p class="title">Expectation</p>
+            </a>
+            <hr color="white" width="78%">
+            <div class="row">
+                <div class="col expect">
+                    <img class="expect_img" src="img/expect1.png" alt="">
+                    <img class="expect_img" src="img/expect2.png" alt="">
+                </div>
+                <div class="col expect">
+                    <img class="expect_img" src="img/expect3.png" alt="">
+                    <img class="expect_img" src="img/expect4.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- 期許 end -->
+        <!-- life -->
+        <div class="container">
+            <a name="life">
+                <p class="title">Life</p>
+            </a>
+            <hr color="white">
+            <div class="row cen">
+                <div class="col-sm">
+                    <div class="c_left hid"><img class="life_img1" src="img/life1.jpg" alt=""></div>
+                    <div class="c_left hid"><img class="life_img2" src="img/life2.jpg" alt=""></div>
+                </div>
+                <div class="col-sm">
+                    <div class="c_middle hid"><img class="life_img2" src="img/life3.jpg" alt=""></div>
+                    <div class="c_middle hid"><img class="life_img1" src="img/life4.jpg" alt=""></div>
+                </div>
+                <div class="col-sm">
+                    <div class="c_right hid"><img class="life_img1" src="img/life5.jpg" alt=""></div>
+                    <div class="c_right hid"><img class="life_img2" src="img/life6.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <!-- life end -->
+    </div>
+    <!-- contact -->
+    <div class="contact">
+        <a name="contact"></a>
+        <div class="container">
+            <div class="row r1">
+                <div class="col">
+                    ADDRESS
+                </div>
+                <div class="col">
+                    E-MAIL
+                </div>
+                <div class="col">
+                    PHONE
+                </div>
+            </div>
+            <div class="row r2">
+                <div class="col">
+                    Hsinchu City, Taiwan
+                </div>
+                <div class="col">
+                    jason0978700180@gmail.com
+                </div>
+                <div class="col">
+                    +886-978700180
+                </div>
+            </div>
+        </div>
+        <a href="https://www.facebook.com/profile.php?id=100006324120508"><img class="con_img" src="img/fb_icon.png" alt=""></a>
+        <a href="https://www.instagram.com/xiang_zhen1122/?hl=zh-tw"><img class="con_img" src="img/ig_icon.png" alt=""></a>
+        <a href="https://www.pinterest.com/jason0978700180/"><img class="con_img" src="img/p_icon.png" alt=""></a>
+        <a href="https://twitter.com/HsiangChen6"><img class="con_img" src="img/t_icon.png" alt=""></a>
+    </div>
+    <!-- contact end -->
+    <div id="gotop"><img class="top_img" src="img/gotop.png" alt=""></div>
+    <!-- Footer -->
+    <footer class="ft">
+        <hr color="white">
+        <p style="letter-spacing: 2px">©2019 Chen. All right reserved</p>
+    </footer>
+    <!-- Footer end -->
+</body>
+
+</html>
